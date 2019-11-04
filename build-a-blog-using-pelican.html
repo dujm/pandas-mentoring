@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <base href="https://python-sprints.github.io/pandas-mentoring">
+    <base href="">
 
     <!--
     favicons generated with:
@@ -119,7 +119,7 @@
 
 
 <h2>5. Add a theme</h2>
-<div class="highlight"><pre><span></span><span class="c1"># Choose a path for to clone pelican-themes directory (e.g. blog/)</span>
+<div class="highlight"><pre><span></span><span class="c1"># Choose a path to clone pelican-themes directory (e.g. blog/)</span>
 <span class="n">git</span> <span class="nb">clone</span> --<span class="n">recursive</span> <span class="n">https:</span>//<span class="n">github</span>.<span class="n">com</span><span class="o">/</span><span class="n">getpelican</span><span class="o">/</span><span class="n">pelican-themes</span> ../<span class="n">pelican-themes</span>
 
 <span class="c1"># Add a theme in the pelicanconf.py of your site (e.g. fishingbird/pelicanconf.py)</span>
@@ -139,10 +139,10 @@
 
 
 <div class="highlight"><pre><span></span><span class="c1"># Generate output</span>
-<span class="n">pelican</span> <span class="n">content</span> <span class="o">-</span><span class="n">o</span> <span class="n">output</span> <span class="o">-</span><span class="n">s</span> <span class="n">pelicanconf</span><span class="o">.</span><span class="n">py</span>
+<span class="n">pelican</span> <span class="n">content</span> <span class="o">-</span><span class="n">o</span> <span class="n">home</span> <span class="o">-</span><span class="n">s</span> <span class="n">pelicanconf</span><span class="o">.</span><span class="n">py</span>
 
 <span class="c1"># Publish to GitHub using ghp-import</span>
-<span class="n">ghp</span><span class="o">-</span><span class="kn">import</span> <span class="nn">output</span> <span class="o">-</span><span class="n">n</span>
+<span class="n">ghp</span><span class="o">-</span><span class="kn">import</span> <span class="nn">home</span> <span class="o">-</span><span class="n">n</span>
 
 <span class="c1"># Push to gh-pages branch</span>
 <span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">gh</span><span class="o">-</span><span class="n">pages</span>
@@ -155,7 +155,7 @@
 <li>pelicanconf.py - This file contains settings to customize your site.</li>
 <li>publishconf.py - This file contains settings that are only used when you’re ready to publish to the web.</li>
 <li>content/ - This folder is where you’ll put the templates and files that will be translated into the content of your site.</li>
-<li>output/ - This folder might not exist until you convert your content into html. By default, the translated website lands here.</li>
+<li>home/ - This folder might not exist until you convert your content into html. By default, the translated website lands here.</li>
 </ul>
 <h2>9. Reference</h2>
 <ul>
@@ -169,7 +169,7 @@
 
   <div class="uk-panel uk-panel-box uk-text-center">
     <a href="/author/Les Pandanistas.html">
-      <img alt="A picture of the author of this content." class="uk-border-circle" src="/theme/img/logo.jpeg"//><h3>Les Pandanistas</h3></a>
+      <img alt="A picture of the author of this content." class="uk-border-circle" src="/theme/img/../img/logo.jpeg"//><h3>Les Pandanistas</h3></a>
   </div>
 
   <div class="uk-panel">
@@ -204,7 +204,7 @@
         and themed by <a href="http://inktrap.org" class="uk-icon-external-link">inktrap</a>
         and made with <a class="uk-icon-heart"></a>
         <br/>
-        <a class="license" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://python-sprints.github.io/pandas-mentoring/theme/ico/cc/by-sa/4.0/80x15.png" /></a>This work is licensed under a <a class="license" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons BY-SA 4.0 International License</a>
+        <a class="license" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/theme/ico/cc/by-sa/4.0/80x15.png" /></a>This work is licensed under a <a class="license" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons BY-SA 4.0 International License</a>
 
     </footer>
 </div>
